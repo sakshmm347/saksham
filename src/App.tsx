@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { Player } from "@lottiefiles/react-lottie-player";
-import loadingAnimation from "./assets/spinner-loading.json"; // Ensure this path is correct and no space in filename
+import loadingAnimation from "./assets/Spinner-Loading.json"; // Ensure this path is correct and no space in filename
 
 const queryClient = new QueryClient();
 
