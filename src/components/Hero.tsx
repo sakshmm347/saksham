@@ -5,6 +5,7 @@ import profileImage from '@/assets/img-1.jpg'; // Replace with your image
 import DarkVeil from './DarkVeli';
 
 
+
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen w-full overflow-hidden ">
@@ -14,9 +15,10 @@ const Hero = () => {
         
       >
         {/* Dark overlay */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 ">
           <DarkVeil />
         </div>
+        
 
         {/* Centered Content */}
         <div className="absolute inset-0 flex  items-center justify-center z-10 mt-6 top-11">
