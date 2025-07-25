@@ -7,12 +7,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { Player } from "@lottiefiles/react-lottie-player";
-import loadingAnimation from "./assets/spinner-loading.json"; // rename the file to remove spaces
+import loadingAnimation from "./assets/spinner-loading.json"; // Ensure this path is correct and no space in filename
 
 const queryClient = new QueryClient();
 
-const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
+const App: React.FC = () => {
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 2000);
@@ -26,7 +26,7 @@ const App = () => {
           autoplay
           loop
           src={loadingAnimation}
-          style={{ height: '300px', width: '300px' }}
+          style={{ height: "300px", width: "300px" }}
         />
         <p className="mt-4 text-lg font-medium animate-pulse">Please wait...</p>
       </div>
