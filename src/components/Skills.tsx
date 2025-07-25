@@ -19,37 +19,37 @@ export const projects = [
     title: "VS Code (Visual Studio Code)",
     description:
       "My primary code editor—lightweight, highly customizable, and packed with extensions that boost productivity and streamline development workflows.",
-    link: "https://amazon.com",
+    link: "https://code.visualstudio.com/",
   },
   {
     title: "React.js",
     description:
       "A powerful JavaScript library for building dynamic and responsive user interfaces. I use React to create modular, high-performance web applications with reusable components.",
-    link: "https://stripe.com",
+    link: "https://react.dev/",
   },
   {
     title: "Next.js",
     description:
       "A full-stack React framework that enables server-side rendering, routing, and API development. It enhances performance and SEO for modern web apps.",
-    link: "https://netflix.com",
+    link: "https://nextjs.org/",
   },
   {
     title: "Canva",
     description:
       "A user-friendly design tool I leverage for creating quick and visually appealing graphics, social media posts, and branding assets.",
-    link: "https://google.com",
+    link: "https://www.canva.com/",
   },
   {
     title: "Figma",
     description:
       "My go-to tool for UI/UX design and prototyping. I use Figma for designing layouts, creating design systems, and collaborating with teams in real-time.",
-    link: "https://meta.com",
+    link: "https://www.figma.com/",
   },
   {
     title: "GSAP (GreenSock Animation Platform)",
     description:
       "An industry-leading animation library I use to bring interfaces to life with smooth, performant, and interactive animations that enhance user engagement.",
-    link: "https://microsoft.com",
+    link: "https://gsap.com/",
   },
   
 ];

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { ExternalLink, Github } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import project1 from '@/assets/project-1.jpg';
+import omni from '@/assets/omnifood.png';
 import project2 from '@/assets/project-2.jpg';
 import project3 from '@/assets/project-3.jpg';
 
@@ -14,19 +14,19 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Mobile App',
-      description: 'A modern e-commerce mobile application with intuitive user experience and seamless checkout process.',
-      image: project1,
-      tags: ['Mobile Design', 'UI/UX', 'Figma', 'Prototyping'],
+      title: 'YP Gold Spices',
+      description: 'A fully functional online spices store with features like bulking order, navigation to online stores and whatsapp integration',
+      image: 'https://www.weularity.com/img/ypgold.png',
+      tags: ['UI/UX', 'Dashboard', 'Spices' , 'Mobile Responsive'],
       demoLink: '#',
       codeLink: '#'
     },
     {
       id: 2,
-      title: 'Analytics Dashboard',
-      description: 'Comprehensive data visualization dashboard for business analytics with interactive charts and insights.',
-      image: project2,
-      tags: ['Web Design', 'Dashboard', 'Data Viz', 'React'],
+      title: 'OmniFood ',
+      description: 'The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs.',
+      image: omni ,
+      tags: ['Web Design', 'Figma', 'Mobile Responsive', 'Food'],
       demoLink: '#',
       codeLink: '#'
     },
@@ -105,7 +105,7 @@ const Portfolio = () => {
 
           {/* View More Button */}
           <div className="text-center mt-12">
-            <Button variant="outline" size="lg" className="px-8 py-6 text-lg group">
+            <Button onClick={() => window.open("https://www.weularity.com/previouswork", "_blank")} variant="outline" size="lg" className="px-8 py-6 text-lg group " >
               View More Projects
               <ExternalLink className="ml-2 h-5 w-5 group-hover:scale-110 transition-transform" />
             </Button>

@@ -26,7 +26,7 @@ const About = () => {
       content: (
         <div>
           <p className="text-primary md:text-4xl mb-4">Present: Working at Weularity</p>
-          <p className="mb-8 text-xs font-normal text-muted-foreground  md:text-lg dark:text-neutral-200">
+          <p className="mb-8 text-xs font-normal text-zinc-400  md:text-lg dark:text-neutral-200">
             Currently contributing to Weularity, a startup I co-founded, where I lead product design and technical development with a focus on web innovation and user experience.
           </p>
           <div className="grid grid-cols-2 gap-4">
@@ -67,7 +67,7 @@ const About = () => {
       content: (
         <div>
           <p className="text-primary md:text-4xl mb-4">Co-Founded Weularity | Graduated from GCET Jammu</p>
-          <p className="mb-8 text-xs font-normal text-muted-foreground  md:text-lg dark:text-neutral-200">
+          <p className="mb-8 text-xs font-normal text-zinc-400  md:text-lg dark:text-neutral-200">
             Co-founded Weularity to bring modern, scalable digital solutions to businesses.
 Graduated with a B.E. in Computer Science and Engineering from GCET Jammu, securing a CGPA of 8.1.
           </p>
@@ -109,7 +109,7 @@ Graduated with a B.E. in Computer Science and Engineering from GCET Jammu, secur
       content: (
         <div>
            <p className="text-primary md:text-4xl mb-4">Completed 12th Grade at ASN Higher Secondary School</p>
-          <p className="mb-8 text-xs font-normal text-muted-foreground  md:text-lg dark:text-neutral-200">
+          <p className="mb-8 text-xs font-normal text-zinc-400  md:text-lg dark:text-neutral-200">
             Passed Class 12 with 86% from ASN Higher Secondary School, laying a strong academic foundation in science and mathematics.
           </p>
           {/* <div className="mb-8">
@@ -162,7 +162,7 @@ Graduated with a B.E. in Computer Science and Engineering from GCET Jammu, secur
       content: (
         <div>
            <p className="text-primary md:text-4xl mb-4">Completed 10th Grade at BSF Senior Secondary School</p>
-          <p className="mb-8 text-xs font-normal text-muted-foreground  md:text-lg dark:text-neutral-200">
+          <p className="mb-8 text-xs font-normal text-zinc-400 md:text-lg dark:text-neutral-200">
             Achieved 80.2% in Class 10, marking the beginning of my academic and personal growth journey in the field of technology.
           </p>
           {/* <div className="mb-8">
