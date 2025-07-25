@@ -18,7 +18,7 @@ const Header = () => {
       <nav className="container mx-auto  px-6 py-4  bg-background/5 md:rounded-full  backdrop-blur-md ">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="text-2xl font-bold text-muted-foreground md:text-primary ">
+          <div className="text-2xl font-bold text-primary ">
             Portfolio
           </div>
 
