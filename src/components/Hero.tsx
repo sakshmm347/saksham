@@ -23,7 +23,7 @@ const Hero = () => {
           <div className=" mx-auto px-6 ">
             <div className="flex flex-col relative items-stretch  justify-between gap-4   ">
                {/* Image Section */}
-              <div className="animate-slide-up   " style={{ animationDelay: '0.5s' }}>
+              <div className="animate-slide-up   " >
                 <img
                   src={profileImage}
                   alt="Profile"
@@ -40,14 +40,14 @@ const Hero = () => {
                   </span>
                 </h1>
                 <h2
-                  className="text-2xl md:text-4xl text-muted-foreground mb-6 animate-slide-up"
-                  style={{ animationDelay: '0.2s' }}
+                  className="text-2xl md:text-4xl text-muted-foreground mb-6 "
+                  
                 >
                   UI/UX Designer & Developer
                 </h2>
                 <p
                   className="text-md text-muted-foreground mb-8 max-w-xl animate-slide-up leading-relaxed"
-                  style={{ animationDelay: '0.4s' }}
+                  
                 >
                   I craft meaningful digital experiences through innovative design solutions.
                   Passionate about creating user-centered designs that not only look beautiful
@@ -57,7 +57,7 @@ const Hero = () => {
                 {/* CTA Buttons */}
                 <div
                   className="animate-slide-up flex flex-col  gap-4 justify-center md:justify-start items-center"
-                  style={{ animationDelay: '0.6s' }}
+                  
                 >
                   <Button size="lg" className="px-8 py-6 text-lg group shadow-medium">
                     <Mail className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
