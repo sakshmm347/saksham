@@ -1,12 +1,6 @@
 import React, { useEffect } from "react";
-import {
-  DraggableCardBody,
-  DraggableCardContainer,
-} from "./draggable-card";
-import experienceImage from '@/assets/img1.jpg';
-import projectsImage from '@/assets/img2.jpg';
-import clientsImage from '@/assets/img3.jpg';
-import teamImage from '@/assets/img4.jpg';
+import { Timeline } from "./timeline";
+
 import { ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
@@ -26,55 +20,204 @@ const About = () => {
   //   { image: projectsImage },
   //   { image: clientsImage},
   //   { image: teamImage}, ]
-  const items = [
+  const data = [
     {
-      title: "Tyler Durden",
-      image: experienceImage,
-      className: "absolute top-10 left-[20%] rotate-[-5deg]",
+      title: "2025",
+      content: (
+        <div>
+          <p className="text-primary md:text-4xl mb-4">Present: Working at Weularity</p>
+          <p className="mb-8 text-xs font-normal text-muted-foreground  md:text-lg dark:text-neutral-200">
+            Currently contributing to Weularity, a startup I co-founded, where I lead product design and technical development with a focus on web innovation and user experience.
+          </p>
+          <div className="grid grid-cols-2 gap-4">
+            <img
+              src="https://assets.aceternity.com/templates/startup-1.webp"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              src="https://assets.aceternity.com/templates/startup-2.webp"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              src="https://assets.aceternity.com/templates/startup-3.webp"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              src="https://assets.aceternity.com/templates/startup-4.webp"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+          </div>
+        </div>
+      ),
     },
     {
-      title: "The Narrator",
-     image: projectsImage,
-      className: "absolute top-40 left-[25%] rotate-[-7deg]",
+      title: "2024",
+      content: (
+        <div>
+          <p className="text-primary md:text-4xl mb-4">Co-Founded Weularity | Graduated from GCET Jammu</p>
+          <p className="mb-8 text-xs font-normal text-muted-foreground  md:text-lg dark:text-neutral-200">
+            Co-founded Weularity to bring modern, scalable digital solutions to businesses.
+Graduated with a B.E. in Computer Science and Engineering from GCET Jammu, securing a CGPA of 8.1.
+          </p>
+          <div className="grid grid-cols-2 gap-4">
+            <img
+              src="https://assets.aceternity.com/pro/hero-sections.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              src="https://assets.aceternity.com/features-section.png"
+              alt="feature template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              src="https://assets.aceternity.com/pro/bento-grids.png"
+              alt="bento template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              src="https://assets.aceternity.com/cards.png"
+              alt="cards template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+          </div>
+        </div>
+      ),
     },
     {
-      title: "Iceland",
-      image:
-        clientsImage,
-      className: "absolute top-5 left-[40%] rotate-[8deg]",
+      title: "2020",
+      content: (
+        <div>
+           <p className="text-primary md:text-4xl mb-4">Completed 12th Grade at ASN Higher Secondary School</p>
+          <p className="mb-8 text-xs font-normal text-muted-foreground  md:text-lg dark:text-neutral-200">
+            Passed Class 12 with 86% from ASN Higher Secondary School, laying a strong academic foundation in science and mathematics.
+          </p>
+          {/* <div className="mb-8">
+            <div className="flex items-center gap-2 text-xs text-muted-foreground md:text-sm dark:text-neutral-300">
+              <p className="text-primary">Physics:</p> 94 marks
+            </div>
+            <div className="flex items-center gap-2 text-xs text-muted-foreground md:text-sm dark:text-neutral-300">
+              <p className="text-primary">Chemistry:</p> 89 marks
+            </div>
+            <div className="flex items-center gap-2 text-xs text-muted-foreground md:text-sm dark:text-neutral-300">
+               <p className="text-primary">Mathematics:</p> 86 marks
+            </div>
+           
+          </div> */}
+          <div className="grid grid-cols-2 gap-4">
+            <img
+              src="https://assets.aceternity.com/pro/hero-sections.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              src="https://assets.aceternity.com/features-section.png"
+              alt="feature template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              src="https://assets.aceternity.com/pro/bento-grids.png"
+              alt="bento template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              src="https://assets.aceternity.com/cards.png"
+              alt="cards template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+          </div>
+        </div>
+      ),
     },
     {
-      title: "Japan",
-      image:
-        teamImage,
-      className: "absolute top-32 left-[55%] rotate-[10deg]",
-    },
-    {
-      title: "Norway",
-      image:
-        "https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?q=80&w=3542&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      className: "absolute top-20 right-[35%] rotate-[2deg]",
-    },
-    {
-      title: "New Zealand",
-      image:
-        "https://images.unsplash.com/photo-1505142468610-359e7d316be0?q=80&w=3070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      className: "absolute top-24 left-[45%] rotate-[-7deg]",
-    },
-    {
-      title: "Canada",
-      image:
-        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      className: "absolute top-8 left-[30%] rotate-[4deg]",
+      title: "2018",
+      content: (
+        <div>
+           <p className="text-primary md:text-4xl mb-4">Completed 10th Grade at BSF Senior Secondary School</p>
+          <p className="mb-8 text-xs font-normal text-muted-foreground  md:text-lg dark:text-neutral-200">
+            Achieved 80.2% in Class 10, marking the beginning of my academic and personal growth journey in the field of technology.
+          </p>
+          {/* <div className="mb-8">
+            <div className="flex items-center gap-2 text-xs text-muted-foreground md:text-sm dark:text-neutral-300">
+              <p className="text-primary">Physics:</p> 94 marks
+            </div>
+            <div className="flex items-center gap-2 text-xs text-muted-foreground md:text-sm dark:text-neutral-300">
+              <p className="text-primary">Chemistry:</p> 89 marks
+            </div>
+            <div className="flex items-center gap-2 text-xs text-muted-foreground md:text-sm dark:text-neutral-300">
+               <p className="text-primary">Mathematics:</p> 86 marks
+            </div>
+           
+          </div> */}
+          <div className="grid grid-cols-2 gap-4">
+            <img
+              src="https://assets.aceternity.com/pro/hero-sections.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              src="https://assets.aceternity.com/features-section.png"
+              alt="feature template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              src="https://assets.aceternity.com/pro/bento-grids.png"
+              alt="bento template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <img
+              src="https://assets.aceternity.com/cards.png"
+              alt="cards template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+          </div>
+        </div>
+      ),
     },
   ];
   useEffect(()=>{
    AOS.init({duration:1200})
 })
   return (
-    <section id="about" className="py-20 bg-black  md:h-screen">
+    <section id="about" className="py-20 bg-black ">
       <div className="container mx-auto px-6 relative top-10 ">
-        <div className="max-w-6xl mx-auto">
+        <div className=" mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16 " data-aos="fade-up">
             <h2 className="text-4xl md:text-5xl font-bold text-muted-foreground mb-6">
@@ -84,47 +227,10 @@ const About = () => {
               Passionate designer with a focus on creating exceptional user experiences
             </p>
           </div>
+       <div className="relative w-full overflow-clip" data-aos="fade-up">
+      <Timeline data={data} />
+    </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center" data-aos="fade-up">
-            {/* Content */}
-            <div className="space-y-6 relative md:bottom-40" >
-              <h3 className="text-2xl font-semibold text-primary mb-4">
-                Creating Digital Solutions That Matter
-              </h3>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                I'm a passionate UI/UX designer with over 5 years of experience in creating 
-                digital experiences that not only look stunning but also provide intuitive 
-                and meaningful interactions for users.
-              </p>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                My design philosophy centers around understanding user needs, business goals, 
-                and technical constraints to create solutions that are both beautiful and functional. 
-                I believe great design is invisible – it just works.
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                When I'm not designing, you can find me exploring the latest design trends, 
-                learning new tools, or collaborating with amazing teams to bring ideas to life.
-              </p>
-            </div>
-
-              <DraggableCardContainer className="relative flex min-h-screen w-full items-center justify-center overflow-clip" >
-      <p className="absolute top-1/2 mx-auto max-w-sm -translate-y-3/4 text-center text-2xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800 " >
-        Happy Memories
-      </p>
-      {items.map((item) => (
-        <DraggableCardBody className={item.className}>
-          <img
-            src={item.image}
-            alt={item.title}
-            className="pointer-events-none relative z-10 h-80 w-80 object-cover"
-          />
-          <h3 className="mt-4 text-center text-2xl font-bold text-neutral-700 dark:text-neutral-300">
-            {item.title}
-          </h3>
-        </DraggableCardBody>
-      ))}
-    </DraggableCardContainer>
-          </div>
         </div>
       </div>
     </section>

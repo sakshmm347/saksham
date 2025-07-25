@@ -16,39 +16,39 @@ export function cn(...inputs: ClassValue[]) {
 
 export const projects = [
   {
-    title: "Stripe",
+    title: "VS Code (Visual Studio Code)",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
-    link: "https://stripe.com",
-  },
-  {
-    title: "Netflix",
-    description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
-  },
-  {
-    title: "Google",
-    description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
-  },
-  {
-    title: "Meta",
-    description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
-  },
-  {
-    title: "Amazon",
-    description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+      "My primary code editor—lightweight, highly customizable, and packed with extensions that boost productivity and streamline development workflows.",
     link: "https://amazon.com",
   },
   {
-    title: "Microsoft",
+    title: "React.js",
     description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
+      "A powerful JavaScript library for building dynamic and responsive user interfaces. I use React to create modular, high-performance web applications with reusable components.",
+    link: "https://stripe.com",
+  },
+  {
+    title: "Next.js",
+    description:
+      "A full-stack React framework that enables server-side rendering, routing, and API development. It enhances performance and SEO for modern web apps.",
+    link: "https://netflix.com",
+  },
+  {
+    title: "Canva",
+    description:
+      "A user-friendly design tool I leverage for creating quick and visually appealing graphics, social media posts, and branding assets.",
+    link: "https://google.com",
+  },
+  {
+    title: "Figma",
+    description:
+      "My go-to tool for UI/UX design and prototyping. I use Figma for designing layouts, creating design systems, and collaborating with teams in real-time.",
+    link: "https://meta.com",
+  },
+  {
+    title: "GSAP (GreenSock Animation Platform)",
+    description:
+      "An industry-leading animation library I use to bring interfaces to life with smooth, performant, and interactive animations that enhance user engagement.",
     link: "https://microsoft.com",
   },
   

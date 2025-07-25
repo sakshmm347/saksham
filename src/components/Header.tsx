@@ -18,7 +18,7 @@ const Header = () => {
       <nav className="container mx-auto  px-6 py-4  bg-background/5 md:rounded-full  backdrop-blur-md ">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="text-2xl font-bold text-primary ">
+          <div className="text-2xl font-bold text-muted-foreground md:text-primary ">
             Portfolio
           </div>
 
@@ -56,7 +56,7 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-primary hover:text-white transition-colors duration-300 py-2"
+                  className="text-muted-foreground text-lg hover:text-white transition-colors duration-300 py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
