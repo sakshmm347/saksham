@@ -11,7 +11,7 @@ const Hero = () => {
       {/* Background Image Container */}
       <div
         className="w-full h-screen bg-cover bg-center relative "
-        style={{ backgroundImage: `url(${heroImage})` }}
+        
       >
         {/* Dark overlay */}
         <div className="absolute inset-0 z-0">
@@ -23,7 +23,7 @@ const Hero = () => {
           <div className=" mx-auto px-6 ">
             <div className="flex flex-col relative items-stretch  justify-between gap-4   ">
                {/* Image Section */}
-              <div className="animate-slide-up   " >
+              <div  >
                 <img
                   src={profileImage}
                   alt="Profile"
@@ -32,7 +32,7 @@ const Hero = () => {
               </div>
 
               {/* Text Section */}
-              <div className="text-center  flex-1 animate-fade-in   ">
+              <div className="text-center  flex-1   ">
                 <p className='text-muted-foreground'>Hello, I'm</p>
                 <h1 className="text-5xl md:text-8xl font-bold text-foreground mb-6">
                   <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent ">
@@ -46,7 +46,7 @@ const Hero = () => {
                   UI/UX Designer & Developer
                 </h2>
                 <p
-                  className="text-md text-muted-foreground mb-8 max-w-xl animate-slide-up leading-relaxed"
+                  className="text-md text-muted-foreground mb-8 max-w-xl  leading-relaxed"
                   
                 >
                   I craft meaningful digital experiences through innovative design solutions.
@@ -56,7 +56,7 @@ const Hero = () => {
 
                 {/* CTA Buttons */}
                 <div
-                  className="animate-slide-up flex flex-col  gap-4 justify-center md:justify-start items-center"
+                  className=" flex flex-col  gap-4 justify-center md:justify-start items-center"
                   
                 >
                   <Button size="lg" className="px-8 py-6 text-lg group shadow-medium">
