@@ -26,7 +26,7 @@ const Hero = () => {
     mouseRepulsion={true}
     mouseInteraction={true}
     density={0.4}
-    glowIntensity={0.2}
+    glowIntensity={0.3}
     saturation={0.8}
     hueShift={220 }
   />
@@ -63,7 +63,7 @@ const Hero = () => {
                   UI/UX Designer & Developer
                 </h2>
                 <p
-                  className="text-md text-muted-foreground mb-8 max-w-xl  leading-relaxed"
+                  className="text-sm text-muted-foreground mb-8 max-w-xl  leading-relaxed"
                   
                 >
                   I craft meaningful digital experiences through innovative design solutions.
