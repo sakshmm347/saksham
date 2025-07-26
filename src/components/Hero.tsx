@@ -26,7 +26,7 @@ const Hero = () => {
     mouseRepulsion={true}
     mouseInteraction={true}
     density={0.4}
-    glowIntensity={0.5}
+    glowIntensity={0.2}
     saturation={0.8}
     hueShift={220 }
   />
@@ -36,7 +36,7 @@ const Hero = () => {
         
 
         {/* Centered Content */}
-        <div className="absolute inset-0 flex  items-center justify-center z-10 md:mt-36 mb-20">
+        <div className="absolute inset-0 flex  items-center justify-center z-10 top-11">
           <div className=" mx-auto px-6 ">
             <div className="flex flex-col relative items-stretch  justify-between gap-4   ">
                {/* Image Section */}
