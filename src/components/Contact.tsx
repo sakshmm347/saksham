@@ -32,8 +32,8 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: Linkedin, label: 'LinkedIn', href: '#' },
-    { icon: Github, label: 'GitHub', href: '#' },
+    { icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/saksham-42665827b/' },
+    { icon: Github, label: 'GitHub', href: 'https://github.com/sakshmm347' },
     { icon: Twitter, label: 'Twitter', href: '#' },
   ];
     useEffect(()=>{
@@ -148,7 +148,7 @@ const Contact = () => {
                   </div>
 
                   <Button type="submit" className="w-full group shadow-medium">
-                    <Send className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
+                    <Send className="mr-2 h-4 w-4 group-hover:scale-125 transition-transform" />
                     Send Message
                   </Button>
                 </form>

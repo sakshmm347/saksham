@@ -114,10 +114,10 @@ const Portfolio = () => {
               onClick={() => window.open("https://www.weularity.com/previouswork", "_blank")}
               variant="outline"
               size="lg"
-              className="px-8 py-6 text-lg group"
+              className="px-8 py-6 text-lg group  duration-300"
             >
               View More Projects
-              <ExternalLink className="ml-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+              <ExternalLink className="ml-2 h-5 w-5 group-hover:scale-125 transition-transform" />
             </Button>
           </div>
         </div>

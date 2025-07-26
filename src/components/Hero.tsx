@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-image.jpg';
 import profileImage from '@/assets/img-1.jpg'; // Replace with your image
 import DarkVeil from './DarkVeli';
+import Galaxy from './Galaxy';
 
 
 
@@ -15,13 +16,27 @@ const Hero = () => {
         
       >
         {/* Dark overlay */}
-        <div className="absolute inset-0 z-0 ">
+        <div className="hidden md:block absolute inset-0 z-0 ">
           <DarkVeil />
         </div>
+  
+
+ <div className='block md:hidden absolute inset-0 z-0 bg-black' style={{ width: '100%', height: '100%', position: 'relative' }}>
+  <Galaxy 
+    mouseRepulsion={true}
+    mouseInteraction={true}
+    density={0.4}
+    glowIntensity={0.5}
+    saturation={0.8}
+    hueShift={220 }
+  />
+</div>
+
+
         
 
         {/* Centered Content */}
-        <div className="absolute inset-0 flex  items-center justify-center z-10 mt-6 top-11">
+        <div className="absolute inset-0 flex  items-center justify-center z-10 md:mt-36 mb-20">
           <div className=" mx-auto px-6 ">
             <div className="flex flex-col relative items-stretch  justify-between gap-4   ">
                {/* Image Section */}
@@ -29,7 +44,7 @@ const Hero = () => {
                 <img
                   src={profileImage}
                   alt="Profile"
-                  className="rounded-full  shadow-lg w-48  h-48 max-w-sm mx-auto object-cover"
+                  className="rounded-full  shadow-lg w-36  h-36 md:w-48 md:h-48 max-w-sm mx-auto object-cover hover:scale-110 duration-300 "
                 />
               </div>
 
@@ -61,12 +76,12 @@ const Hero = () => {
                   className=" flex flex-col  gap-4 justify-center md:justify-start items-center"
                   
                 >
-                  <Button size="lg" className="px-8 py-6 text-lg group shadow-medium">
-                    <Mail className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+                  <Button size="lg" className="px-8 py-6 text-lg group shadow-medium  ">
+                    <Mail className="mr-2 h-5 w-5 group-hover:scale-125 transition-transform " />
                     Get In Touch
                   </Button>
-                  <Button variant="outline" size="lg" className="px-8 py-6 text-lg group">
-                    <Download className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+                  <Button variant="outline" size="lg" className="px-8 py-6 text-lg group ">
+                    <Download className="mr-2 h-5 w-5 group-hover:scale-125 transition-transform" />
                     Download Resume
                   </Button>
                 </div>
