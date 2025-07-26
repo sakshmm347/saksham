@@ -1,13 +1,20 @@
 import { ArrowDown, Download, Mail } from 'lucide-react';
+import React, { useEffect } from "react";
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-image.jpg';
 import profileImage from '@/assets/img-1.jpg'; // Replace with your image
 import DarkVeil from './DarkVeli';
 import Galaxy from './Galaxy';
-
+// AOS
+import AOS from "aos";
+import "aos/dist/aos.css"
 
 
 const Hero = () => {
+     useEffect(()=>{
+         AOS.init({duration:1200})
+      })
+
   return (
     <section id="home" className="relative min-h-screen w-full overflow-hidden ">
       {/* Background Image Container */}
@@ -45,12 +52,14 @@ const Hero = () => {
                   src={profileImage}
                   alt="Profile"
                   className="rounded-full  shadow-lg w-36  h-36 md:w-48 md:h-48 max-w-sm mx-auto object-cover hover:scale-110 duration-300 "
+                  data-aos="fade-left"
                 />
               </div>
 
               {/* Text Section */}
-              <div className="text-center  flex-1   ">
-                <p className='text-muted-foreground'>Hello, I'm</p>
+              <div className="text-center  flex-1   " >
+                <div data-aos="fade-right">
+                  <p className='text-muted-foreground'>Hello, I'm</p>
                 <h1 className="text-5xl md:text-8xl font-bold text-foreground mb-6">
                   <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent ">
                     SAKSHAM
@@ -70,11 +79,13 @@ const Hero = () => {
                   Passionate about creating user-centered designs that not only look beautiful
                   but also solve real-world problems.
                 </p>
+                </div>
+                
 
                 {/* CTA Buttons */}
                 <div
                   className=" flex flex-col  gap-4 justify-center md:justify-start items-center"
-                  
+                  data-aos="fade-left"
                 >
                   <Button size="lg" className="px-8 py-6 text-lg group shadow-medium  ">
                     <Mail className="mr-2 h-5 w-5 group-hover:scale-125 transition-transform " />
