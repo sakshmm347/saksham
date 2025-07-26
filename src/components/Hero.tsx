@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-image.jpg';
 import profileImage from '@/assets/img-1.jpg'; // Replace with your image
+import profileImage2 from '@/assets/ProfileP.jpg'; // Replace with your image
 import DarkVeil from './DarkVeli';
 import Galaxy from './Galaxy';
 // AOS
@@ -51,7 +52,15 @@ const Hero = () => {
                 <img
                   src={profileImage}
                   alt="Profile"
-                  className="rounded-full  shadow-lg w-36  h-36 md:w-48 md:h-48 max-w-sm mx-auto object-cover hover:scale-110 duration-300 "
+                  className="hidden md:block rounded-full  shadow-lg w-36  h-36 md:w-48 md:h-48 max-w-sm mx-auto object-cover hover:scale-110 duration-300 "
+                  data-aos="fade-left"
+                />
+              </div>
+              <div  >
+                <img
+                  src={profileImage2}
+                  alt="Profile"
+                  className=" block md:hidden rounded-full  shadow-lg w-36  h-36 md:w-48 md:h-48 max-w-sm mx-auto object-cover hover:scale-110 duration-300 "
                   data-aos="fade-left"
                 />
               </div>
@@ -72,7 +81,7 @@ const Hero = () => {
                   UI/UX Designer & Developer
                 </h2>
                 <p
-                  className="text-sm text-muted-foreground mb-8 max-w-xl  leading-relaxed"
+                  className="text-md text-muted-foreground mb-8 max-w-xl  leading-relaxed"
                   
                 >
                   I craft meaningful digital experiences through innovative design solutions.

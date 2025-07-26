@@ -56,7 +56,7 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-muted-foreground text-lg hover:text-white transition-colors duration-300 py-2"
+                  className="text-primary text-lg hover:text-white transition-colors duration-300 py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
