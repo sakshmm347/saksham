@@ -44,7 +44,7 @@ const Hero = () => {
         
 
         {/* Centered Content */}
-        <div className="absolute inset-0 flex  items-center justify-center z-10 top-11">
+        <div className=" inset-0 flex  items-center justify-center z-10 relative top-32 md:top-32 lg:top-32  ">
           <div className=" mx-auto px-6 ">
             <div className="flex flex-col relative items-stretch  justify-between gap-4   ">
                {/* Image Section */}
@@ -93,7 +93,7 @@ const Hero = () => {
 
                 {/* CTA Buttons */}
                 <div
-                  className=" flex flex-col  gap-4 justify-center md:justify-start items-center"
+                  className=" flex flex-col  gap-4 lg:flex-row lg:justify-center items-center"
                   data-aos="fade-left"
                 >
                   <Button size="lg" className="px-8 py-6 text-lg group shadow-medium  ">
