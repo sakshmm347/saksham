@@ -44,7 +44,7 @@ const Hero = () => {
         
 
         {/* Centered Content */}
-        <div className="inset-0 flex  items-center justify-center z-10 relative top-32">
+        <div className="inset-0 flex  items-center justify-center z-10 relative pt-32">
           <div className=" mx-auto px-6 ">
             <div className="flex flex-col  items-stretch  justify-between gap-4   ">
                {/* Image Section */}
