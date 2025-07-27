@@ -24,12 +24,12 @@ const Hero = () => {
         
       >
         {/* Dark overlay */}
-        <div className="hidden md:block absolute inset-0 z-0 ">
+        <div className="md:block hidden absolute inset-0 z-0 ">
           <DarkVeil />
         </div>
   
 
- <div className='block md:hidden absolute inset-0 z-0 bg-black' style={{ width: '100%', height: '100%', position: 'relative' }}>
+ <div className='block md:hidden absolute inset-0 z-0 bg-black' style={{ width: '100%', height: '100%'}}>
   <Galaxy 
     mouseRepulsion={true}
     mouseInteraction={true}
@@ -44,9 +44,9 @@ const Hero = () => {
         
 
         {/* Centered Content */}
-        <div className="absolute inset-0 flex  items-center justify-center z-10 top-32">
+        <div className="inset-0 flex  items-center justify-center z-10 relative top-32">
           <div className=" mx-auto px-6 ">
-            <div className="flex flex-col relative items-stretch  justify-between gap-4   ">
+            <div className="flex flex-col  items-stretch  justify-between gap-4   ">
                {/* Image Section */}
               <div  >
                 <img
