@@ -42,7 +42,7 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <section id="portfolio" className="py-20 md:h-screen">
+    <section id="portfolio" className="py-20 md:min-h-screen">
       <div className="container mx-auto px-6 relative top-10" data-aos="fade-up">
         <div className="max-w-6xl mx-auto">
           

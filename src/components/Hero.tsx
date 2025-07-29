@@ -36,7 +36,7 @@ const Hero = () => {
         <div className="w-full max-w-3xl mx-auto flex flex-col items-center text-center gap-6">
           
           {/* Responsive Profile Image */}
-          <div className='pt-28 lg:pt-20'>
+          <div className='pt-30 lg:pt-20'>
             <img
               src={profileImage}
               alt="Profile"
