@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-
+import { Button } from '@/components/ui/button'; 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+   
   const navItems = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },

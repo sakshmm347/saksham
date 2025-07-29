@@ -5,6 +5,7 @@ import profileImage from '@/assets/img-1.jpg';
 import profileImage2 from '@/assets/ProfileP.jpg';
 import DarkVeil from './DarkVeli';
 import Galaxy from './Galaxy';
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -36,7 +37,7 @@ const Hero = () => {
         <div className="w-full max-w-3xl mx-auto flex flex-col items-center text-center gap-6">
           
           {/* Responsive Profile Image */}
-          <div className='pt-30 lg:pt-20'>
+          <div className='pt-24'>
             <img
               src={profileImage}
               alt="Profile"
