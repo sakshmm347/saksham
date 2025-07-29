@@ -40,7 +40,7 @@ const Hero = () => {
         {/* Centered Content */}
         <div className="absolute inset-0 flex items-center justify-center z-10 px-4 py-8">
           <div className="w-full max-w-4xl mx-auto ">
-            <div className="flex flex-col items-center justify-center gap-6 min-h-[calc(100vh-4rem)] py-24">
+            <div className="flex flex-col items-center justify-center gap-6 min-h-[calc(100vh-4rem)] md:py-60  py-24">
               
               {/* Image Section */}
               <div className="flex-shrink-0">
