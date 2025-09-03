@@ -81,7 +81,7 @@ const Hero = () => {
               >
                 UI/UX Designer & Developer
               </h2>
-              <p className="text-md sm:text-lg lg:text-xl text-muted-foreground max-w-xl mx-auto md:mx-0 leading-relaxed">
+              <p className="text-sm sm:text-lg lg:text-xl text-muted-foreground max-w-xl mx-auto md:mx-0 leading-relaxed">
                 I craft meaningful digital experiences through innovative design
                 solutions. Passionate about creating user-centered designs that
                 not only look beautiful but also solve real-world problems.
