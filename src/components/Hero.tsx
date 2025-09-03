@@ -72,7 +72,7 @@ const Hero = () => {
                           max-w-[1400px] mx-auto">
             {/* Text Section */}
             <div
-              className="px-6 md:px-10 text-center "
+              className="px-2  md:px-10 text-center "
               data-aos="fade-right"
             >
               <h2
@@ -88,11 +88,11 @@ const Hero = () => {
               </p>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col md:flex-row gap-3 justify-center items-center mt-6">
+              <div className="flex flex-col md:flex-row gap-3 justify-center items-center mt-6"
+              data-aos="fade-right">
                 <Button
                   size="lg"
                   className="px-6 py-4 sm:px-8 sm:py-6 text-base sm:text-lg group shadow-medium"
-                  data-aos="fade-right"
                   onClick={() =>
                     (window.location.href = "mailto:youremail@example.com")
                   }
@@ -104,7 +104,6 @@ const Hero = () => {
                   variant="outline"
                   size="lg"
                   className="px-6 py-4 sm:px-8 sm:py-6 text-base sm:text-lg group"
-                  data-aos="fade-right"
                   onClick={() => window.open("/resume.pdf")}
                 >
                   <Download className="mr-2 h-5 w-5 group-hover:scale-125 transition-transform" />
