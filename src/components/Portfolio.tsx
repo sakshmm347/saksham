@@ -12,7 +12,7 @@ const Portfolio = () => {
       id: 1,
       title: 'YP Gold Spices',
       description: 'A fully functional online spices store with features like bulking order, navigation to online stores and whatsapp integration',
-      image: 'https://www.weularity.com/img/ypgold.png',
+      image: 'https://www.weularity.com/_next/image?url=%2Fimages%2Fspices.avif&w=1920&q=75',
       tags: ['UI/UX', 'Dashboard', 'Spices' , 'Mobile Responsive'],
       demoLink: 'https://www.ypgoldspices.com/', // update with actual link
       codeLink: '#'
@@ -30,7 +30,7 @@ const Portfolio = () => {
       id: 3,
       title: 'The Aesthetic Trove',
       description: 'A sleek modern Jewelry Website for The Aesthetic Trove. Fully functional online store with advanced features like product filtering, cart, and payment integration.',
-      image: 'https://www.weularity.com/img/aesthetic.png',
+      image: 'https://www.weularity.com/_next/image?url=%2Fimages%2Faes.avif&w=1920&q=75',
       tags: ['Branding', 'Jewellery', 'WhatsApp Integration', 'E-commerce'],
       demoLink: 'https://www.theaesthetictrove.com/', // update with actual link
       codeLink: '#'
@@ -111,7 +111,7 @@ const Portfolio = () => {
           {/* View More Button */}
           <div className="text-center mt-12">
             <Button
-              onClick={() => window.open("https://www.weularity.com/previouswork", "_blank")}
+              onClick={() => window.open("https://www.weularity.com/works", "_blank")}
               variant="outline"
               size="lg"
               className="px-8 py-6 text-lg group  duration-300"
