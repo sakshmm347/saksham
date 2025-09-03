@@ -62,7 +62,7 @@ const Hero = () => {
               className="block text-primary md:hidden"
               data-aos="fade-right"
             >
-              HI, I'M SAKSHAM
+               SAKSHAM
             </span>
           </h1>
 
@@ -92,6 +92,7 @@ const Hero = () => {
                 <Button
                   size="lg"
                   className="px-6 py-4 sm:px-8 sm:py-6 text-base sm:text-lg group shadow-medium"
+                  data-aos="fade-right"
                   onClick={() =>
                     (window.location.href = "mailto:youremail@example.com")
                   }
@@ -103,6 +104,7 @@ const Hero = () => {
                   variant="outline"
                   size="lg"
                   className="px-6 py-4 sm:px-8 sm:py-6 text-base sm:text-lg group"
+                  data-aos="fade-right"
                   onClick={() => window.open("/resume.pdf")}
                 >
                   <Download className="mr-2 h-5 w-5 group-hover:scale-125 transition-transform" />
