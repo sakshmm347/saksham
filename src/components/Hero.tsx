@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen w-full overflow-x-hidden"
+      className="relative min-h-screen w-full " 
     >
       {/* Background layers */}
       <div className="absolute inset-0 z-0 hidden md:block">
@@ -39,21 +39,18 @@ const Hero = () => {
         <div className="w-full mx-auto flex flex-col items-center text-center gap-6">
           {/* Mobile Profile Image */}
           <img
-            src={profileImage}
-            height="1000"
-            width="1000"
-            className="h-36 w-36 md:hidden block rounded-full object-cover bg-slate-400 group-hover/card:shadow-xl"
-            alt="Saksham Basson profile photo"
-            data-aos="fade-left"
-          />
+    src={profileImage2}
+    alt="Saksham Basson - UI/UX Designer & Developer"
+    className="md:hidden block relative z-20"
+  />
 
           {/* Heading */}
           <h1
             className="font-bold text-foreground md:mt-0 md:mb-10
-                       text-5xl sm:text-6xl lg:text-[120px] xl:text-[120px] 2xl:text-[160px]"
+                       text-5xl sm:text-6xl lg:text-[120px]  2xl:text-[160px]"
           >
             <span
-              className="hidden md:block outline-text"
+              className="hidden md:block outline-text "
               data-aos="fade-down"
             >
               HI, I'M SAKSHAM
@@ -124,7 +121,7 @@ const Hero = () => {
 
             {/* Profile Image (Right Side) */}
            {/* Profile Image (Right Side) */}
-<div className="relative scale-110  transition duration-500">
+<div className="relative   transition duration-500">
   <img
     src={profileImage2}
     alt="Saksham Basson - UI/UX Designer & Developer"
