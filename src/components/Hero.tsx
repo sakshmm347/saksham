@@ -46,7 +46,7 @@ const Hero = () => {
 
           {/* Heading */}
           <h1
-            className="font-bold text-foreground md:mt-10 md:mb-10
+            className="font-bold text-foreground mt-20 md:mb-10
                        text-5xl sm:text-6xl lg:text-[120px]  2xl:text-[160px]"
           >
             <span
