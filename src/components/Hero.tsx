@@ -56,7 +56,7 @@ const Hero = () => {
               HI, I'M SAKSHAM
             </span>
             <span
-              className="block text-primary md:hidden"
+              className="block text-primary md:hidden mt-20"
               data-aos="fade-right"
             >
                SAKSHAM
