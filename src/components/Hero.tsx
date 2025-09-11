@@ -50,7 +50,7 @@ const Hero = () => {
           {/* Heading */}
           <h1
             className="font-bold text-foreground md:mt-0 md:mb-10
-                       text-5xl sm:text-6xl lg:text-[120px] xl:text-[120px] 2xl:text-[180px]"
+                       text-5xl sm:text-6xl lg:text-[120px] xl:text-[120px] 2xl:text-[160px]"
           >
             <span
               className="hidden md:block outline-text"
@@ -124,7 +124,7 @@ const Hero = () => {
 
             {/* Profile Image (Right Side) */}
            {/* Profile Image (Right Side) */}
-<div className="relative scale-110 2xl:scale-125 transition duration-500">
+<div className="relative scale-110  transition duration-500">
   <img
     src={profileImage2}
     alt="Saksham Basson - UI/UX Designer & Developer"

@@ -19,7 +19,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-2xl font-bold text-primary ">
-            Portfolio
+            S.K
           </div>
 
           {/* Desktop Navigation */}
