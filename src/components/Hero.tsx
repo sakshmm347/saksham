@@ -38,7 +38,7 @@ const Hero = () => {
       <div className="relative z-10 flex items-center justify-center md:h-[110vh] h-[120vh] px-6 ">
         <div className="w-full mx-auto flex flex-col items-center text-center gap-6">
           {/* Mobile Profile Image */}
-          <img src={profileImage} height="1000" width="1000" className="h-36 w-36 md:hidden block rounded-full object-cover bg-slate-400 group-hover/card:shadow-xl" alt="Saksham Basson profile photo" data-aos="fade-left" />
+          <img src={profileImage} height="1000" width="1000" className="h-40 w-40 -mt-10 md:hidden block rounded-full object-cover bg-slate-400 group-hover/card:shadow-xl" alt="Saksham Basson profile photo" data-aos="fade-left" />
 
           {/* Heading */}
           <h1
@@ -46,13 +46,13 @@ const Hero = () => {
                        text-5xl sm:text-6xl lg:text-[120px]  2xl:text-[160px]"
           >
             <span
-              className="hidden md:block outline-text mt-20 md:mb-10"
+              className="hidden md:block outline-text md:mt-20 "
               data-aos="fade-down"
             >
               HI, I'M SAKSHAM
             </span>
             <span
-              className="block text-primary md:hidden  "
+              className="block text-primary md:hidden "
               data-aos="fade-right"
             >
                SAKSHAM
