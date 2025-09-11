@@ -41,22 +41,22 @@ const Hero = () => {
           <img
     src={profileImage2}
     alt="Saksham Basson - UI/UX Designer & Developer"
-    className="md:hidden block relative z-20"
+    className="md:hidden block w-80 relative z-20"
   />
 
           {/* Heading */}
           <h1
-            className="font-bold text-foreground  md:mb-10
+            className="font-bold text-foreground  
                        text-5xl sm:text-6xl lg:text-[120px]  2xl:text-[160px]"
           >
             <span
-              className="hidden md:block outline-text mt-20"
+              className="hidden md:block outline-text mt-20 md:mb-10"
               data-aos="fade-down"
             >
               HI, I'M SAKSHAM
             </span>
             <span
-              className="block text-primary md:hidden "
+              className="block text-primary md:hidden  "
               data-aos="fade-right"
             >
                SAKSHAM
