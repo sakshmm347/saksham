@@ -66,9 +66,9 @@ const About = () => {
       title: "2024",
       content: (
         <div>
-          <p className="text-primary md:text-4xl mb-4">Joined Weularity | Graduated from GCET Jammu</p>
+          <p className="text-primary md:text-4xl mb-4">Co-Founded Weularity | Graduated from GCET Jammu</p>
           <p className="mb-8 text-xs font-normal text-zinc-400  md:text-lg dark:text-neutral-200">
-            Joined Weularity to bring modern, scalable digital solutions to businesses.
+            Co-Founded Weularity to bring modern, scalable digital solutions to businesses.
 Graduated with a B.E. in Computer Science and Engineering from GCET Jammu, securing a CGPA of 8.1.
           </p>
           <div className="grid grid-cols-2 gap-4">
