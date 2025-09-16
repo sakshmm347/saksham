@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import profileImage from "@/assets/ProfileP.jpg";
 import profileImage2 from "@/assets/SakshamPF.png";
-import profileImage3 from "@/assets/Saksham Resume.pdf";
+
 import DarkVeil from "./DarkVeli";
 import Galaxy from "./Galaxy";
 import AOS from "aos";
