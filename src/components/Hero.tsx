@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import profileImage from "@/assets/ProfileP.jpg";
 import profileImage2 from "@/assets/SakshamPF.png";
+import profileImage3 from "@/assets/Saksham Resume.pdf";
 import DarkVeil from "./DarkVeli";
 import Galaxy from "./Galaxy";
 import AOS from "aos";
@@ -13,6 +14,7 @@ const Hero = () => {
     AOS.init({ duration: 1200 });
   }, []);
 
+  
   return (
     <section
       id="home"
@@ -94,14 +96,14 @@ const Hero = () => {
                   Get In Touch
                 </Button>
                 <Button
-                  variant="outline"
-                  size="lg"
-                  className="px-6 py-4 sm:px-8 sm:py-6 text-base sm:text-lg group"
-                  onClick={() => window.open("/resume.pdf")}
-                >
-                  <Download className="mr-2 h-5 w-5 group-hover:scale-125 transition-transform" />
-                  Download Resume
-                </Button>
+  variant="outline"
+  size="lg"
+  className="px-6 py-4 sm:px-8 sm:py-6 text-base sm:text-lg group"
+  onClick={() => window.open("/SakshamResume.pdf", "_blank")}
+>
+  <Download className="mr-2 h-5 w-5 group-hover:scale-125 transition-transform" />
+  View Resume
+</Button>
               </div>
 
               {/* Scroll Down Indicator */}
