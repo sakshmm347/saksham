@@ -3,7 +3,7 @@ import { Timeline } from "./timeline";
 
 import { ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
-
+import CarouselDemo from "./Carousel";
 // AOS
 import AOS from "aos";
 import "aos/dist/aos.css"
@@ -227,6 +227,7 @@ Graduated with a B.E. in Computer Science and Engineering from GCET Jammu, secur
               Passionate designer with a focus on creating exceptional user experiences
             </p>
           </div>
+          <CarouselDemo/>
        <div className="relative w-full overflow-clip" data-aos="fade-up">
       <Timeline data={data} />
     </div>

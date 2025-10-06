@@ -68,7 +68,7 @@ const SkillsSection = () => {
       <div className="container mx-auto px-6 max-w-6xl relative top-10"   >
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl md:text-5xl font-bold text-muted-foreground mb-4">
-            My <span className="text-primary">Skills</span>
+            Tech <span className="text-primary">Stack</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Tools and technologies I use to bring ideas to life.
