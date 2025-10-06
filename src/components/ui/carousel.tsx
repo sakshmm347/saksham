@@ -85,24 +85,19 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
 
 interface CarouselControlProps {
   type: string;
-  title: string;
   handleClick: () => void;
 }
 
-const CarouselControl = ({
-  type,
-  title,
-  handleClick,
-}: CarouselControlProps) => {
+const CarouselControl = ({ type, handleClick }: CarouselControlProps) => {
   return (
     <button
-      className={`w-10 h-10 flex items-center mx-2 justify-center bg-neutral-200 dark:bg-neutral-800 rounded-full hover:-translate-y-0.5 active:translate-y-0.5 transition duration-200 ${
-        type === "previous" ? "rotate-180" : ""
-      }`}
-      title={title}
+      className={`w-10 h-10 flex items-center justify-center transition-transform duration-200 hover:-translate-y-0.5 active:translate-y-0.5`}
       onClick={handleClick}
     >
-      <IconArrowNarrowRight className="text-neutral-600 dark:text-neutral-200" />
+      <IconArrowNarrowRight
+        className={`text-gray-500 ${type === "previous" ? "rotate-180" : ""}`}
+        size={28}
+      />
     </button>
   );
 };
@@ -131,7 +126,7 @@ export default function Carousel({ slides }: CarouselProps) {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 3000);
+    }, 5000);
     return () => clearInterval(interval);
   }, [slides.length]);
 
@@ -158,16 +153,8 @@ export default function Carousel({ slides }: CarouselProps) {
       </ul>
 
       <div className="absolute flex justify-center w-full top-[calc(100%+1rem)]">
-        <CarouselControl
-          type="previous"
-          title="Go to previous slide"
-          handleClick={handlePreviousClick}
-        />
-        <CarouselControl
-          type="next"
-          title="Go to next slide"
-          handleClick={handleNextClick}
-        />
+        <CarouselControl type="previous" handleClick={handlePreviousClick} />
+        <CarouselControl type="next" handleClick={handleNextClick} />
       </div>
     </div>
   );
