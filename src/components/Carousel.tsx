@@ -15,11 +15,11 @@ const CarouselDemo = () => {
       button: "Explore Component",
       src: "/images/1.jpg",
     },
-    {
-      title: "Neon Nights",
-      button: "Explore Component",
-      src: "/images/5.jpg",
-    },
+    // {
+    //   title: "Neon Nights",
+    //   button: "Explore Component",
+    //   src: "/images/5.jpg",
+    // },
     {
       title: "Desert Whispers",
       button: "Explore Component",

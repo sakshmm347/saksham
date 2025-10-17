@@ -126,7 +126,7 @@ export default function Carousel({ slides }: CarouselProps) {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 3000);
     return () => clearInterval(interval);
   }, [slides.length]);
 
@@ -152,10 +152,10 @@ export default function Carousel({ slides }: CarouselProps) {
         ))}
       </ul>
 
-      <div className="absolute flex justify-center w-full top-[calc(100%+1rem)]">
+      {/* <div className="absolute flex justify-center w-full top-[calc(100%+1rem)]">
         <CarouselControl type="previous" handleClick={handlePreviousClick} />
         <CarouselControl type="next" handleClick={handleNextClick} />
-      </div>
+      </div> */}
     </div>
   );
 }
